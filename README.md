@@ -1,4 +1,4 @@
-# Key mapping
+# Key mappings
 
 ```
 Open explorer (netrw):                Space+p+v
