@@ -13,7 +13,7 @@ return require('packer').startup(function(use)
 		-- or                            , branch = '0.1.x',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
-	
+
 	-- Color Scheme
 	use({
 		'rose-pine/neovim',
@@ -39,11 +39,6 @@ return require('packer').startup(function(use)
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v3.x',
 		requires = {
-			--- Uncomment the two plugins below if you want to manage the language servers from neovim
-			--- and read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guides/integrate-with-mason-nvim.md
-			
-			
-
 			-- LSP Support
 			{'neovim/nvim-lspconfig'},
 
@@ -52,7 +47,7 @@ return require('packer').startup(function(use)
 			-- Autocompletion
 			{'hrsh7th/nvim-cmp'},
 			{'hrsh7th/cmp-nvim-lsp'},
-			
+
 			{'hrsh7th/cmp-buffer'},
 			{'hrsh7th/cmp-path'},
 			{'saadparwaiz1/cmp_luasnip'},
@@ -63,4 +58,11 @@ return require('packer').startup(function(use)
 
 		}
 	}
+
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
 end)

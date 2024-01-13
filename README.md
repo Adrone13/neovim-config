@@ -39,5 +39,7 @@ LSP go to definition:                 g+d
 LSP hover info:                       K
 LSP rename:                           Space+v+r+n
 LSP show code actions                 Space+v+c+a
+
+Show undo history:                    Space+u
 ```
 

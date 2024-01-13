@@ -1,2 +1,3 @@
 require("adrone13.remap")
-print("hello there")
+require("adrone13.set")
+
