@@ -110,6 +110,14 @@ _G.packer_plugins = {
     path = "/Users/alex/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["conform.nvim"] = {
+    config = { "\27LJ\2\nC\0\0\3\1\2\0\5-\0\0\0009\0\0\0005\2\1\0B\0\2\1K\0\1\0\0¿\1\0\2\17lsp_fallback\2\15timeout_ms\3Ù\3\vformat≈\3\1\0\a\0\29\0\"6\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\18\0005\4\4\0005\5\3\0=\5\5\0045\5\6\0=\5\a\0045\5\b\0=\5\t\0045\5\n\0=\5\v\0045\5\f\0=\5\r\0045\5\14\0=\5\15\0045\5\16\0=\5\17\4=\4\19\0035\4\20\0=\4\21\3B\1\2\0016\1\22\0009\1\23\0019\1\24\0015\3\25\0'\4\26\0003\5\27\0005\6\28\0B\1\5\0012\0\0ÄK\0\1\0\1\0\1\tdesc*Format file or range (in visual mode)\0\14<leader>l\1\3\0\0\6n\6v\bset\vkeymap\bvim\19format_on_save\1\0\2\17lsp_fallback\2\15timeout_ms\3Ù\3\21formatters_by_ft\1\0\0\blua\1\2\0\0\vstylua\ago\1\3\0\0\14goimports\ngofmt\tjson\1\2\0\0\rprettier\thtml\1\2\0\0\rprettier\bcss\1\2\0\0\rprettier\15typescript\1\2\0\0\rprettier\15javascript\1\0\0\1\2\0\0\rprettier\nsetup\fconform\frequire\0" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/Users/alex/.local/share/nvim/site/pack/packer/opt/conform.nvim",
+    url = "https://github.com/stevearc/conform.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/alex/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -184,14 +192,22 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: rose-pine
-time([[Config for rose-pine]], true)
-try_loadstring("\27LJ\2\n>\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\31colorscheme rose-pine-main\bcmd\bvim\0", "config", "rose-pine")
-time([[Config for rose-pine]], false)
 -- Config for: Comment.nvim
 time([[Config for Comment.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
 time([[Config for Comment.nvim]], false)
+-- Config for: rose-pine
+time([[Config for rose-pine]], true)
+try_loadstring("\27LJ\2\n>\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\31colorscheme rose-pine-main\bcmd\bvim\0", "config", "rose-pine")
+time([[Config for rose-pine]], false)
+vim.cmd [[augroup packer_load_aucmds]]
+vim.cmd [[au!]]
+  -- Event lazy-loads
+time([[Defining lazy-load event autocommands]], true)
+vim.cmd [[au BufNewFile * ++once lua require("packer.load")({'conform.nvim'}, { event = "BufNewFile *" }, _G.packer_plugins)]]
+vim.cmd [[au BufReadPre * ++once lua require("packer.load")({'conform.nvim'}, { event = "BufReadPre *" }, _G.packer_plugins)]]
+time([[Defining lazy-load event autocommands]], false)
+vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
