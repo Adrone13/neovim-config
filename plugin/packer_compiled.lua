@@ -111,7 +111,7 @@ _G.packer_plugins = {
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["conform.nvim"] = {
-    config = { "\27LJ\2\n&\0\0\3\2\1\0\5-\0\0\0009\0\0\0-\2\1\0B\0\2\1K\0\1\0\0¿\1¿\vformat≈\3\1\0\b\0\29\0\"6\0\0\0'\2\1\0B\0\2\0025\1\2\0009\2\3\0005\4\19\0005\5\5\0005\6\4\0=\6\6\0055\6\a\0=\6\b\0055\6\t\0=\6\n\0055\6\v\0=\6\f\0055\6\r\0=\6\14\0055\6\15\0=\6\16\0055\6\17\0=\6\18\5=\5\20\4=\1\21\4B\2\2\0016\2\22\0009\2\23\0029\2\24\0025\4\25\0'\5\26\0003\6\27\0005\a\28\0B\2\5\0012\0\0ÄK\0\1\0\1\0\1\tdesc*Format file or range (in visual mode)\0\14<leader>l\1\3\0\0\6n\6v\bset\vkeymap\bvim\19format_on_save\21formatters_by_ft\1\0\0\blua\1\2\0\0\vstylua\ago\1\3\0\0\14goimports\ngofmt\tjson\1\2\0\0\rprettier\thtml\1\2\0\0\rprettier\bcss\1\2\0\0\rprettier\15typescript\1\2\0\0\rprettier\15javascript\1\0\0\1\2\0\0\rprettier\nsetup\1\0\2\15timeout_ms\3Ù\3\17lsp_fallback\2\fconform\frequire\0" },
+    config = { "\27LJ\2\n&\0\0\3\2\1\0\5-\0\0\0009\0\0\0-\2\1\0B\0\2\1K\0\1\0\0¿\1¿\vformatê\4\1\0\b\0!\0&6\0\0\0'\2\1\0B\0\2\0025\1\2\0009\2\3\0005\4\23\0005\5\5\0005\6\4\0=\6\6\0055\6\a\0=\6\b\0055\6\t\0=\6\n\0055\6\v\0=\6\f\0055\6\r\0=\6\14\0055\6\15\0=\6\16\0055\6\17\0=\6\18\0055\6\19\0=\6\20\0055\6\21\0=\6\22\5=\5\24\4=\1\25\4B\2\2\0016\2\26\0009\2\27\0029\2\28\0025\4\29\0'\5\30\0003\6\31\0005\a \0B\2\5\0012\0\0ÄK\0\1\0\1\0\1\tdesc*Format file or range (in visual mode)\0\15<leader>mp\1\3\0\0\6n\6v\bset\vkeymap\bvim\19format_on_save\21formatters_by_ft\1\0\0\blua\1\2\0\0\vstylua\ago\1\3\0\0\14goimports\ngofmt\tjson\1\2\0\0\rprettier\thtml\1\2\0\0\rprettier\bcss\1\2\0\0\rprettier\20typescriptreact\1\2\0\0\rprettier\20javascriptreact\1\2\0\0\rprettier\15typescript\1\2\0\0\rprettier\15javascript\1\0\0\1\2\0\0\rprettier\nsetup\1\0\2\15timeout_ms\3Ù\3\17lsp_fallback\2\fconform\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -147,6 +147,14 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alex/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-lint"] = {
+    config = { "\27LJ\2\n\"\0\0\2\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\0¿\rtry_lint\"\0\0\2\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\0¿\rtry_lint˜\3\1\0\b\0\30\0(6\0\0\0'\2\1\0B\0\2\0025\1\4\0005\2\3\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\0015\2\f\0=\2\r\1=\1\2\0006\1\14\0009\1\15\0019\1\16\1'\3\1\0005\4\17\0B\1\3\0026\2\14\0009\2\15\0029\2\18\0025\4\19\0005\5\20\0=\1\21\0053\6\22\0=\6\23\5B\2\3\0016\2\14\0009\2\24\0029\2\25\2'\4\26\0'\5\27\0003\6\28\0005\a\29\0B\2\5\0012\0\0ÄK\0\1\0\1\0\1\tdesc%Trigger linting for current file\0\14<leader>l\6n\bset\vkeymap\rcallback\0\ngroup\1\0\0\1\4\0\0\rBufEnter\17BufWritePost\16InsertLeave\24nvim_create_autocmd\1\0\1\nclear\2\24nvim_create_augroup\bapi\bvim\ago\1\2\0\0\17golangcilint\20typescriptreact\1\2\0\0\reslint_d\20javascriptreact\1\2\0\0\reslint_d\15typescript\1\2\0\0\reslint_d\15javascript\1\0\0\1\2\0\0\reslint_d\18linters_by_ft\tlint\frequire\0" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/Users/alex/.local/share/nvim/site/pack/packer/opt/nvim-lint",
+    url = "https://github.com/mfussenegger/nvim-lint"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -192,20 +200,20 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
-time([[Config for Comment.nvim]], false)
 -- Config for: rose-pine
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\n>\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\31colorscheme rose-pine-main\bcmd\bvim\0", "config", "rose-pine")
 time([[Config for rose-pine]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au BufNewFile * ++once lua require("packer.load")({'conform.nvim'}, { event = "BufNewFile *" }, _G.packer_plugins)]]
-vim.cmd [[au BufReadPre * ++once lua require("packer.load")({'conform.nvim'}, { event = "BufReadPre *" }, _G.packer_plugins)]]
+vim.cmd [[au BufReadPre * ++once lua require("packer.load")({'nvim-lint', 'conform.nvim'}, { event = "BufReadPre *" }, _G.packer_plugins)]]
+vim.cmd [[au BufNewFile * ++once lua require("packer.load")({'nvim-lint', 'conform.nvim'}, { event = "BufNewFile *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 

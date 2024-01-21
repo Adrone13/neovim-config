@@ -13,6 +13,8 @@ function ConfigConform()
     formatters_by_ft = {
       javascript = { "prettier" },
       typescript = { "prettier" },
+      javascriptreact = { "prettier" },
+      typescriptreact = { "prettier" },
       css = { "prettier" },
       html = { "prettier" },
       json = { "prettier" },
@@ -22,7 +24,7 @@ function ConfigConform()
     format_on_save = format_on_save_config
   })
 
-  vim.keymap.set({ "n", "v" }, "<leader>l", function()
+  vim.keymap.set({ "n", "v" }, "<leader>mp", function()
     conform.format(format_on_save_config)
   end, { desc = "Format file or range (in visual mode)" })
 end

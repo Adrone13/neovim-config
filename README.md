@@ -24,13 +24,15 @@ Editor delete word:                   d+a+w
 Editor delete word and go to insert:  c+a+w
 Editor format indents in block:       =+a+p
 Editor format indernts whole file:    gg+=+G
+Editor delete items after cursor:     d+t+}
+Editor replace selected:              Visual mode: c
 
-Editor split right:                   :vs
-Editor split down:                    :sp
-Editor select right split:            Ctrl+w+<Right> 
-Editor select left split:             Ctrl+w+<Left>
-Editor select top split:              Ctrl+w+<Up>
-Editor select bottom split:           Ctrl+w+<Down>
+Splits - split right:                 :vs
+Splits - split down:                  :sp
+Splits - select right split:          Ctrl+w+<Right> 
+Splits - select left split:           Ctrl+w+<Left>
+Splits - select top split:            Ctrl+w+<Up>
+Splits - select bottom split:         Ctrl+w+<Down>
 
 Autocomplete confirm:                 Enter
 Autocomplete show suggestions:        Option+c
